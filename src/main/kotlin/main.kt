@@ -4,9 +4,9 @@ import java.io.FileWriter
 import java.io.IOException
 
 fun main(){
-    var fileNameLast = File("Names/","last")
-    var fileNameFPR = File("Names/","PR")
-    var fileNameFTR = File("Names/", "TR")
+    var fileNameLast = File("src/main/Names/","last.csv")
+    var fileNameFPR = File("src/main/Names/","PR.TXT")
+    var fileNameFTR = File("src/main/Names/", "TR.TXT")
     var names = ArrayList<name>()
 
     val firstNames = readFilesAsLinesUsingUseLines(fileNameFPR) as ArrayList<String>
