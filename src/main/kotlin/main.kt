@@ -14,10 +14,11 @@ fun main(){
     val firstNames1 = readFilesAsLinesUsingUseLines(fileNameFTR) as ArrayList<String>
     firstNames += firstNames1
     val lastNames = readFilesAsLinesUsingUseLines(fileNameLast) as ArrayList<String>
-
+    var count = 0
     var countStr = " "
     var validIn = false
-    var count = 0
+
+    lastNames.rem
 
     while (!validIn) {
 
@@ -45,11 +46,11 @@ fun main(){
         names.add(name(tempName, lastNames[l]))
         f++
         l++
-        if(f > firstNames.size){
+        if(f >= firstNames.size){
             firstNames.shuffle()
             f = 0
         }
-        if(l > lastNames.size){
+        if(l >= lastNames.size){
             lastNames.shuffle()
             l = 0
         }
